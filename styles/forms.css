@@ -25,3 +25,11 @@ fieldset + fieldset {
     display: flex;
     gap: 1rem;
 }
+
+/* < 1280px */
+@media (width < 80em) {
+    .actions-wrapper {
+        display: grid;
+        gap: 1rem;
+    }
+}

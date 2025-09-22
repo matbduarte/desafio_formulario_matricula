@@ -41,10 +41,8 @@
     --text: 400 1rem/1.5 var(--font-family);
     --text-sm: 400 0.875rem/1.4 var(--font-family);
 
-    --px-lg: 1.5rem;
-
-    --py-base: 1.5rem;
-    --py-md: 3rem;
+    --px-lg: 4rem;
+    --py-lg: 4rem;
 }
 
 body {
@@ -71,13 +69,11 @@ ul[role="list"] {
     list-style: none;
 }
 
-@media (width >=80em) {
+@media (width < 80em) {
 
     /* 1280px */
     :root {
-        --px-lg: 4rem;
-
-        --py-base: 4rem;
-        --py-md: 3rem;
+        --px-lg: 1.5rem;
+        --py-lg: 1.5rem;
     }
 }

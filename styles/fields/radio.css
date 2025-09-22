@@ -5,7 +5,7 @@ label + .radio-wrapper {
 
 .radio-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); /* min card width 120px */
     gap: 1rem;
 }
 
@@ -50,6 +50,17 @@ label + .radio-wrapper {
 
         & .radio-image {
             background-image: url(../../assets/icons/radio-checked.svg);
+        }
+    }
+}
+
+/* < 1280px */
+@media (width < 80em) {
+
+    /* 1280px */
+    :root {
+        .radio-wrapper {
+            grid-template-columns: repeat(auto-fit, minmax(9.25rem, 1fr)); /* min card width 148px */
         }
     }
 }
