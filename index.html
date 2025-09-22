@@ -138,7 +138,7 @@
                     <fieldset class="enroll-options">
                         <legend>Opções de matrícula</legend>
 
-                        <div class="enroll-options">
+                        <div class="input-wrapper">
                             <label>Selecione o turno de estudo</label>
 
                             <div class="radio-wrapper">
@@ -156,7 +156,71 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="input-wrapper">
+                            <label>Em qual esporte você gostaria de inscrever seu filho?</label>
+
+                            <div class="radio-wrapper">
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input id="football" type="radio" name="sport">
+                                    <img src="assets/icons/football.svg" alt="ícone de futebol">
+                                    <label for="football">Futebol</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input id="basketball" type="radio" name="sport">
+                                    <img src="assets/icons/basketball-02.svg" alt="ícone de basquete">
+                                    <label for="basketball">Basquete</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input id="swimming" type="radio" name="sport">
+                                    <img src="assets/icons/swimming.svg" alt="ícone de natação">
+                                    <label for="swimming">Natação</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input id="yoga" type="radio" name="sport">
+                                    <img src="assets/icons/yoga-02.svg" alt="ícone de yoga">
+                                    <label for="yoga">Yoga</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input id="volleyball" type="radio" name="sport">
+                                    <img src="assets/icons/volleyball.svg" alt="ícone de volley">
+                                    <label for="volleyball">Volley</label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <div class="radio-image"></div>
+                                    <input id="boxing" type="radio" name="sport">
+                                    <img src="assets/icons/boxing-glove-01.svg" alt="ícone de boxing">
+                                    <label for="boxing">Boxing</label>
+                                </div>
+                            </div>
+                        </div>
                     </fieldset>
+
+                    <div class="terms-wrapper input-wrapper checkbox-wrapper">
+                        <div class="checkbox-image"></div>
+                        <input id="terms" type="checkbox" name="terms">
+                        <label for="terms">Declaro que li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong> da escola Estrela do Amanhã.</label>
+                    </div>
+
+                    <div class="actions-wrapper">
+                        <button class="btn-secondary" type="button">
+                            Salvar respostas
+                        </button>
+
+                        <button class="btn-primary" type="submit">
+                            Fazer matrícula
+                        </button>
+                    </div>
                 </form>
             </div>
         </main>
