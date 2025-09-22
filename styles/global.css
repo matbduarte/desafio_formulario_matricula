@@ -8,32 +8,38 @@
 }
 
 :root {
-    --brand-color-light: #F67841;
-    --brand-color-mid: #F3541C;
-    --brand-color-dark: #E43A12;
+    --text-primary: #292524;
+    --text-secondary: #57534E;
+    --text-tertiary: #8F8881;
+    --text-highlight: #E43A12;
+
+    --surface-primary: #FFFFFF;
+    --surface-secondary: #FEE7D6;
+    --surface-disabled: #E7E5E4;
+
+    --stroke-default: #D6D3D1;
+    --stroke-highlight: #F3541C;
+    --semantic-error: #DC2626;
+
+    --brand-light: #F67841;
+    --brand-mid: #F3541C;
+    --brand-dark: #E43A12;
     --bg-color: #FFFFFF;
-    --surface-color-primary: #FFFFFF;
-    --surface-color-secondary: #FEE7D6;
-    --surface-color-disabled: #E7E5E4;
-    --text-color-primary: #292524;
-    --text-color-secondary: #57534E;
-    --text-color-tertiary: #8F8881;
-    --text-color-highlight: #E43A12;
-    --stroke-color-default: #D6D3D1;
-    --stroke-color-highlight: #F3541C;
-    --semantic-color-error: #DC2626;
-    --support-color-orange: #F9A474;
-    --support-color-yellow: #FEDF6F;
-    --support-color-green: #C7D78D;
-    --support-color-blue: #B8CEDC;
-    --support-color-violet: #C3B2E7;
-    --support-color-pink: #F682A5;
+
+    --support-orange: #F9A474;
+    --support-yellow: #FEDF6F;
+    --support-green: #C7D78D;
+    --support-blue: #B8CEDC;
+    --support-violet: #C3B2E7;
+    --support-pink: #F682A5;
 
     --font-family: 'Poppins', sans-serif;
-    --h1: 800 32px/120% var(--font-family);
-    --h2: 800 24px/120% var(--font-family);
-    --h3: 800 20px/120% var(--font-family);
-    --h4: 800 16px/120% var(--font-family);
+    --h1: 600 1.5rem/1.25 var(--font-family);
+    --h2: 600 2.5rem/1.25 var(--font-family);
+    --h3: 600 1.25rem/1.2 var(--font-family);
+    --h4: 600 1rem/1.2 var(--font-family);
+    --text: 400 1rem/1.5 var(--font-family);
+    --text-sm: 400 0.875rem/1.4 var(--font-family);
 
     --px-lg: 1.5rem;
 
@@ -42,25 +48,18 @@
 }
 
 body {
-    font: var(--text-sm);
-    color: var(--text-color-primary);
-    background-color: var(--bg-color);
+    overflow: hidden;
+    font: var(--text);
+    color: var(--text-secondary);
 }
 
-h1 {
-    font: var(--h1);
+h1, h2 {
+    color: var(--text-primary);
 }
 
-h2 {
-    font: var(--h2);
-}
-
-h3 {
-    font: var(--h3);
-}
-
-h4 {
-    font: var(--h4);
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 a {
